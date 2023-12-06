@@ -12,6 +12,10 @@ p {
   color: #1d0101;
 }
 
+body {
+  min-height: 1000px;
+}
+
 .banner {
   position: relative;
   width: 100%;
@@ -57,3 +61,55 @@ p {
   box-shadow: 0 0 15px 4px blueviolet;
   font-weight: bold;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+header .logo span {
+  color: #e9195e;
+}
+
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: rgb(222, 195, 174);
+  font-size: larger;
+  font-weight: bold;
+  /* border: 2px solid black; */
+  border-radius: 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.749);
+}
+
+header .navigation li a:hover {
+  color: rgb(0,0,0255);
+  background: #000000;
+}
+
