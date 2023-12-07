@@ -66,6 +66,7 @@
   header.sticky {
     background: rgb(2, 17, 53);
     padding: 10px 100px;
+    height: 25%;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     /* Corrected the alpha value */
   }
@@ -81,19 +82,25 @@
     justify-content: space-between;
     align-items: center;
   }
+ header a img {
+    width: 100px;
+    height: auto;
+  }
 
-  header .logo {
+  header a .logo {
+    float: right;
     color: #fff;
     font-weight: 700;
     font-size: 2rem;
     text-decoration: none;
+    top: -200px;
   }
 
-  header.sticky .logo {
+  header.sticky a .logo {
     color: rgba(255, 255, 0, 0.46);
   }
 
-  header .logo span {
+  header a .logo span {
     color: #e9195e;
   }
 
